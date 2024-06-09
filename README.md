@@ -1,4 +1,3 @@
-````
 ## User Endpoint
 |Endpoint|METHOD|BODY|Usage|Example|HEADERS |
 |------------|------------|---------|---------|---------|------------|
@@ -9,7 +8,6 @@
 |/order/ordered-tiket?idUser={id_user}|/GET|-|Mendapatkan Riwayat Order Tiket|/order/ordered-tiket?idUser=5a4ae7ce110347bd81692|{Authorizations: Bearer {token}}|
 |/order/delete-order?idOrder={id_order}|/DELETE|-|Menghapus Order Tiket|/order/delete-order?idOrder=80e812d61c7143dfad141|{Authorizations: Bearer {token}}|
 
-````
 ## Admin Endpoint
 |Endpoint|METHOD|BODY|Usage|Example|HEADERS |
 |------------|------------|---------|---------|---------|------------|
