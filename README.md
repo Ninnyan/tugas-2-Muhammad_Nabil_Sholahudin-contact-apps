@@ -1,3 +1,4 @@
+````
 ## User Endpoint
 |Endpoint|METHOD|BODY|Usage|Example|HEADERS |
 |------------|------------|---------|---------|---------|------------|
@@ -8,7 +9,7 @@
 |/order/ordered-tiket?idUser={id_user}|/GET|-|Mendapatkan Riwayat Order Tiket|/order/ordered-tiket?idUser=5a4ae7ce110347bd81692|{Authorizations: Bearer {token}}|
 |/order/delete-order?idOrder={id_order}|/DELETE|-|Menghapus Order Tiket|/order/delete-order?idOrder=80e812d61c7143dfad141|{Authorizations: Bearer {token}}|
 
-
+````
 ## Admin Endpoint
 |Endpoint|METHOD|BODY|Usage|Example|HEADERS |
 |------------|------------|---------|---------|---------|------------|
@@ -20,6 +21,7 @@
 |/places/edit-destinasi?idWisata={id_wisata}|/PUT|"name": string,"deskripsi": string,"harga_tiket: string,"jam_operasional": string,"provinsi": string,"photos": 3 file|Memperbaruhi Data Wisata|/places/edit-destinasi?idWisata=87e458c4b99b4eaaaffb0|{Authorizations: Bearer {token}, Content-Type: application/json}|
 |/provinces/province?idAdmin={id_admin}|/GET|-|Mendapatkan Semua Data Wisata|/provinces/province?idAdmin=ab3bb3f6b4834ff79d956|{Authorizations: Bearer {token}}|
 |/provinces/detail?idWisata={id_wisata}|/GET|-|Mendapatkan Detail Data Wisata|/provinces/detail?idWisata=87e458c4b99b4eaaaffb0|{Authorizations: Bearer {token}}|
+|/places/delete-destinasi?idWisata={id_wisata}|/DELETE|-|Menghapus Data Wisata|/places/delete-destinasi?idWisata=87e458c4b99b4eaaaffb0|{Authorizations: Bearer {token}}|
 |/provinces/photo?idWisata={id}&photoReference={pilih angka antara 0 sampai 2}|/GET|-|Mendapatkan Data Photo|/provinces/photo?idWisata=87e458c4b99b4eaaaffb0&photoReference=0|{Authorizations: Bearer {token}}|
 |/activity/get-activity|/GET|-|Mendapatakan Aktivitas login User|-|{Authorizations: Bearer {token}}|
 |/stock-tiket/stock|/GET|-|Mendapatkan Data Stock Tiket Wisata|-|{Authorizations: Bearer {token}}|
